@@ -33,7 +33,7 @@
 ## Dagger
 - JSR330 |
 - compile-time |
-- components instead of Object graph
+- components instead of Object graph |
 ---
 @title[JavaScript Block]
 

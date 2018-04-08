@@ -7,8 +7,8 @@
 theme : sky
 theme-override : assets/css/PITCHME.css
 # theme-override : assets/css/PITCHME.codemax.css
-logo : assets/image/logo.png
+logo : none
 highlight : hybrid
 transition : none
 published : true
-footnote : "GitPitch [ Sky ] Presentation Template"
+footnote : "Wojciech Warwas"
