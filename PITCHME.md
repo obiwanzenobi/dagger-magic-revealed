@@ -8,7 +8,10 @@
 ---
 
 # Dagger Hello world 
-
+---?code=sample/go/server.go&lang=golang&title=Golang File
+@[1-14](Present code found within any repo source file.)
+@[16-20](Without ever leaving your slideshow.)
+@[22-34](Using GitPitch code-presenting with (optional) annotations.)
 ---
 
 ## What is dependency injection?
