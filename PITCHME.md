@@ -3,6 +3,8 @@
 ### Android dependency injection under the hood
 
 ---
+![magic1](https://pixabay.com/get/eb35b30e2cf5013ed1534705fb0938c9bd22ffd41cb3144596f9c578af/wizard-2021410_1920.jpg)
+---
 
 ## What is dependency injection?
 
