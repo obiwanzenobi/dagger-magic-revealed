@@ -6,10 +6,12 @@
 ## Where is the magic?
 ![magic1](https://cdn.pixabay.com/photo/2017/01/30/16/50/wizard-2021410_640.jpg)
 
----?code=sample/java/Hello.java&lang=java&title=Dagger Hello world 
-@[1-14](Present code found within any repo source file.)
-@[16-20](Without ever leaving your slideshow.)
++++?code=sample/java/Hello.java&lang=java&title=Dagger Hello world 
+@[1-14](Basic module with unscoped provider.)
+@[16-20](Component with just a single inject.)
 @[22-34](Using GitPitch code-presenting with (optional) annotations.)
+@[43-58](Using GitPitch code-presenting with (optional) annotations.)
+
 ---
 
 ## What is dependency injection?
