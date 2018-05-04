@@ -9,8 +9,8 @@
 +++?code=sample/java/Hello.java&lang=java&title=Dagger Hello world 
 @[1-14](Basic module with unscoped provider.)
 @[16-20](Component with just a single inject.)
-@[22-34](Using GitPitch code-presenting with (optional) annotations.)
-@[43-58](Using GitPitch code-presenting with (optional) annotations.)
+@[22-43](Using GitPitch code-presenting with (optional) annotations.)
+@[45-58](Using GitPitch code-presenting with (optional) annotations.)
 
 ---
 
