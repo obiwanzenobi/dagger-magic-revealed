@@ -3,8 +3,12 @@
 ### Android dependency injection under the hood
 
 ---
-#Where is the magic?
+## Where is the magic?
 ![magic1](https://cdn.pixabay.com/photo/2017/01/30/16/50/wizard-2021410_640.jpg)
+---
+
+# Dagger Hello world 
+
 ---
 
 ## What is dependency injection?
