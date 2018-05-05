@@ -21,6 +21,20 @@ public final class AppModule_ProvideHelloFactory implements Factory<String> {
   }
 }
 
+//From dagger.internal
+public interface Factory<T> extends Provider<T> {
+}
+
+//From javax.inject
+public interface Provider<T> {
+
+    /**
+     * Provides a fully-constructed and injected instance of {@code T}.
+     * ...
+     */
+    T get();
+}
+
 @Module
 public class AppModule {
 
