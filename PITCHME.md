@@ -1,6 +1,6 @@
 # Dagger
 
-### Android dependency injection under the hood
+### Android dependency injection under the hood aka Magic Revealed
 
 ---
 ## Where is the magic?
@@ -9,19 +9,19 @@
 +++?code=sample/java/Hello.java&lang=java&title=Dagger Hello world 
 @[1-14](Basic module with unscoped provider.)
 @[16-20](Component with just a single inject.)
-@[22-43](Using GitPitch code-presenting with (optional) annotations.)
-@[45-58](Using GitPitch code-presenting with (optional) annotations.)
+@[22-34](Application with component initialization)
+@[45-58](Activity inject.)
 
 ---
 
-## What is dependency injection?
+## Look deeper
+![magic2](https://o.aolcdn.com/images/dims?thumbnail=640%2C480&quality=80&image_uri=https%3A%2F%2Fs.aolcdn.com%2Fhss%2Fstorage%2Fadam%2F78a605cfc9682db8038816df349dd9e3%2Fgandalf+lotr+macbook+apple.jpg&client=cbc79c14efcebee57402&signature=a9cba48bbfc7a8c7cc7176923a06d0482cd8bd91)
 
-<br>
-
-@fa[syringe] "Dependency injection is one form of the broader technique of inversion of control" ~ WIKI.
-
-@fa[microphone gp-tip](Press S for Speaker Notes)
-
++++?code=sample/java/HelloGeneratedFactory.java&lang=java&title=Look inside 
+@[25-26]
+@[28-36]
+@[2-6]
+@[8-12]
 ---
 
 ## Inversion of control
