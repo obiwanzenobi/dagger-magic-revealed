@@ -62,6 +62,18 @@
 ## Nested Scopes
 ![magic4](http://i0.kym-cdn.com/photos/images/facebook/000/531/557/a88.jpg)
 
++++?code=sample/java/NestedScopesComponents.java&lang=java&title=Nested components
+@[1-5]
+@[7-14]
+@[16-23]
+@[37-47]
+@[66-74]
+@[78-84]
+@[86-91]
+@[152-160]
+@[163-178]
+
+---
 ## Inversion of control
 
 - Code Presenting |
