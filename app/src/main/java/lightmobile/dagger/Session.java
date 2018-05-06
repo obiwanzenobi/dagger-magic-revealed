@@ -1,10 +1,10 @@
 package lightmobile.dagger;
 
-public class SessionDisplayModel {
+public class Session {
 
     private String sessionName;
 
-    public SessionDisplayModel(String sessionName) {
+    public Session(String sessionName) {
         this.sessionName = sessionName;
     }
 

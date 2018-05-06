@@ -1,13 +1,17 @@
 package lightmobile.dagger.injection;
 
-import dagger.Component;
+import dagger.Subcomponent;
 import lightmobile.dagger.injection.scopes.PerSession;
 
 @PerSession
-@Component(dependencies = AppComponent.class, modules = SessionModule.class)
+@Subcomponent(modules = SessionModule.class)
 public interface SessionComponent {
 
-    Integer sessionNumber();
+    @Subcomponent.Builder
+    interface Builder {
+        SessionComponent.Builder sessionModule(SessionModule sessionModule);
+        SessionComponent build();
+    }
 
-    String originalString();
+    SessionActivityComponent plus(SessionActivityModule activityModule);
 }

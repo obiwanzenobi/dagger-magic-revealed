@@ -1,17 +1,22 @@
 package lightmobile.dagger.injection;
 
-import java.util.concurrent.ThreadLocalRandom;
-
 import dagger.Module;
 import dagger.Provides;
+import lightmobile.dagger.Session;
 import lightmobile.dagger.injection.scopes.PerSession;
 
 @Module
 public class SessionModule {
 
+    private Session session;
+
+    public SessionModule(Session session) {
+        this.session = session;
+    }
+
     @PerSession
     @Provides
-    Integer provideSessionNumber() {
-        return ThreadLocalRandom.current().nextInt(0, 100 + 1);
+    Session provideSessionNumber() {
+        return session;
     }
 }
