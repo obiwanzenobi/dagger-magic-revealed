@@ -92,7 +92,7 @@
 ![magic6](assets/scopeAll.jpg)
 
 +++
-![scopeNo](http://i0.kym-cdn.com/photos/images/original/000/213/008/angry-no-l.png&size=auto 70%)
+![scopeNo](https://ic.pics.livejournal.com/deathnoteuser07/61110878/23829/23829_900.png)
 ## Inversion of control
 
 - Code Presenting |
