@@ -1,5 +1,7 @@
 package lightmobile.dagger.injection;
 
+import android.net.Uri;
+
 import dagger.Module;
 import dagger.Provides;
 import lightmobile.dagger.Session;
@@ -16,7 +18,7 @@ public class SessionModule {
 
     @PerSession
     @Provides
-    Session provideSessionNumber() {
+    Session provideSessionNumber(Uri uri) {
         return session;
     }
 }

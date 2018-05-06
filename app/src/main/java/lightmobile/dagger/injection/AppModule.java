@@ -1,9 +1,11 @@
 package lightmobile.dagger.injection;
 
 import android.content.Context;
+import android.net.Uri;
 
 import dagger.Module;
 import dagger.Provides;
+import dagger.Reusable;
 import lightmobile.dagger.SessionManager;
 import lightmobile.dagger.injection.scopes.PerApp;
 
@@ -20,5 +22,17 @@ public class AppModule {
     @PerApp
     public SessionManager provideSessionManager(SessionComponent.Builder sessionComponentBuilder) {
         return new SessionManager(sessionComponentBuilder);
+    }
+
+    @Provides
+    @Reusable
+    String provideRawUrl() {
+        return "http://google.com";
+    }
+
+    @Provides
+    @PerApp
+    Uri provideUrl(String rawUrl) {
+        return Uri.parse(rawUrl);
     }
 }

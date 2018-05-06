@@ -16,6 +16,9 @@ public class MainActivity extends AppCompatActivity {
     @Inject
     SessionManager sessionManager;
 
+    @Inject
+    StringBuilder stringBuilder;
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
