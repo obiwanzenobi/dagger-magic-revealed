@@ -30,6 +30,11 @@
 @[40-46]
 @[17-26]
 
+
++++?code=sample/java/HelloGeneratedInjector.java&lang=java&title=Look inside 
+@[4-10]
+@[12-19]
+
 ---
 
 ## Inversion of control
