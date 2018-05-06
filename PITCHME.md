@@ -39,6 +39,7 @@
 
 +++
 ![structure1](/assets/01HelloStructure.png)
+<br/>
 ![structure2](/assets/01HelloDaggerSmallStructure.png)
 ---
 
