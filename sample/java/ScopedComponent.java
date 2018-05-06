@@ -1,6 +1,6 @@
 @Scope
 @Retention(RUNTIME)
-public @interface AppScope {
+public @interface PerApp {
 }
 
 @Module
@@ -13,7 +13,7 @@ public class AppModule {
     }
 
     @Provides
-    @AppScope
+    @PerApp
     public String provideHello() {
         return context.getString(R.string.hello);
     }
