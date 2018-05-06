@@ -43,6 +43,8 @@
 ![structure2](/assets/01HelloDaggerSmallStructure.png)
 ---
 
+## Scoped provides
+![magic3](/assets/scopes.png)
 ## Inversion of control
 
 - Code Presenting |
