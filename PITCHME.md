@@ -38,9 +38,9 @@
 @[12-19]
 
 +++
-![structure1](/assets/01HelloStructure.png&size=auto 90%)
+![structure1](/assets/01HelloStructure.png)
 <br/>
-![structure2](/assets/01HelloDaggerSmallStructure.png&size=auto 90%)
+![structure2](/assets/01HelloDaggerSmallStructure.png)
 ---
 
 ## Inversion of control
