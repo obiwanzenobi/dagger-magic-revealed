@@ -1,15 +1,15 @@
 public final class DaggerAppComponent implements AppComponent {
+  
+  public static Builder builder() {
+    return new Builder();
+  }
+  
   private AppModule appModule;
 
   private DaggerAppComponent(Builder builder) {
     initialize(builder);
   }
 
-  public static Builder builder() {
-    return new Builder();
-  }
-
-  @SuppressWarnings("unchecked")
   private void initialize(final Builder builder) {
     this.appModule = builder.appModule;
   }
