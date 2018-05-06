@@ -44,7 +44,9 @@
 ---
 
 ## Scoped provides
-![magic3](/assets/scopes.png)
+![magic3](/assets/scopes.jpg)
+
+---
 ## Inversion of control
 
 - Code Presenting |
