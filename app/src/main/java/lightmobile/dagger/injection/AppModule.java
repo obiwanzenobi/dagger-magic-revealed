@@ -5,6 +5,7 @@ import android.content.Context;
 import dagger.Module;
 import dagger.Provides;
 import lightmobile.dagger.R;
+import lightmobile.dagger.injection.scopes.PerApp;
 
 @Module
 public class AppModule {

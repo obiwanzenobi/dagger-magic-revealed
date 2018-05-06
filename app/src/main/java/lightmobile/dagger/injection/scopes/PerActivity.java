@@ -1,4 +1,4 @@
-package lightmobile.dagger.injection;
+package lightmobile.dagger.injection.scopes;
 
 import java.lang.annotation.Retention;
 
@@ -8,5 +8,5 @@ import static java.lang.annotation.RetentionPolicy.RUNTIME;
 
 @Scope
 @Retention(RUNTIME)
-public @interface PerApp {
+public @interface PerActivity {
 }
