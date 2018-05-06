@@ -7,8 +7,6 @@
 theme : sky
 theme-override : assets/css/PITCHME.css
 # theme-override : assets/css/PITCHME.codemax.css
-logo : none
 highlight : hybrid
-transition : none
 published : true
 footnote : "Wojciech Warwas"
