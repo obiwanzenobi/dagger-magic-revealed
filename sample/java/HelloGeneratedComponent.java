@@ -51,3 +51,9 @@ public final class DaggerAppComponent implements AppComponent {
     }
   }
 }
+
+@Singleton
+@Component(modules = AppModule.class)
+public interface AppComponent {
+    void inject(MainActivity activity);
+}
