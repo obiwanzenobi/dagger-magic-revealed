@@ -4,7 +4,7 @@
 
 ---
 ## Where is the magic?
-![magic1](https://cdn.pixabay.com/photo/2017/01/30/16/50/wizard-2021410_640.jpg)
+![magic1](/assets/wizardMagic1.jpg)
 
 +++?code=sample/java/Hello.java&lang=java&title=Dagger Hello world 
 @[1-14](Basic module with unscoped provider.)
