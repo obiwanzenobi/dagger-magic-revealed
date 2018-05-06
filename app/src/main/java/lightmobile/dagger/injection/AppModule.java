@@ -16,6 +16,7 @@ public class AppModule {
     }
 
     @Provides
+    @PerApp
     public String provideHello() {
         return context.getString(R.string.hello);
     }
