@@ -36,6 +36,14 @@ public final class DaggerAppComponent implements AppComponent {
       }
       return new DaggerAppComponent(this);
     }
+    
+    // For 0 arguments modules:
+    public AppComponent build() {
+      if (appModule == null) {
+        this.appModule = new AppModule();
+      }
+      return new DaggerAppComponent(this);
+    }
 
     public Builder appModule(AppModule appModule) {
       this.appModule = Preconditions.checkNotNull(appModule);
