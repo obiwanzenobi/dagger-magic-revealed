@@ -46,4 +46,11 @@ public final class DaggerAppComponent implements AppComponent {
     MainActivity_MembersInjector.injectInitialText(instance, provideHelloProvider.get());
     return instance;
   }
+  
+  //unscoped 
+  private MainActivity injectMainActivity(MainActivity instance) {
+    MainActivity_MembersInjector.injectInitialText(
+        instance, AppModule_ProvideHelloFactory.proxyProvideHello(appModule));
+    return instance;
+  }
 }
