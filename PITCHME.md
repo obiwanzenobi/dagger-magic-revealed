@@ -108,10 +108,10 @@
 
 +++?code=sample/java/StaticComponent.java&lang=java&title=Static provides
 @[1-9]
-@[11-17]
-@[19-24]
-@[26-31]
-@[33-42]
+@[11-18]
+@[20-27]
+@[29-34]
+@[36-44]
 --- 
 ## Inversion of control
 
