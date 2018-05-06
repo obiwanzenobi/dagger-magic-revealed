@@ -13,14 +13,17 @@ public final class DaggerAppComponent implements AppComponent {
 
   @SuppressWarnings("unchecked")
   private void initialize(final Builder builder) {
-    this.provideHelloProvider = DoubleCheck.provider(AppModule_ProvideHelloFactory.create());
+    this.provideHelloProvider = 
+        DoubleCheck.provider(AppModule_ProvideHelloFactory.create());
   }
   
   //module object is needed for non static provides 
   @SuppressWarnings("unchecked")
   private void initialize(final Builder builder) {
     this.provideHelloProvider =
-        DoubleCheck.provider(AppModule_ProvideHelloFactory.create(builder.appModule));
+        DoubleCheck.provider(
+            AppModule_ProvideHelloFactory.create(builder.appModule)
+        );
   }
 
   public static final class Builder {
