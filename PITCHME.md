@@ -78,8 +78,21 @@
 ## Subcomponents
 ![magic5](http://i0.kym-cdn.com/photos/images/facebook/000/531/557/a88.jpg)
 
----
++++?code=sample/java/SubcomponensComponent.java&lang=java&title=Subcomponents approach
+@[1-10]
+@[12-16]
+@[18-29]
+@[31-37]
+@[39-44]
+@[46-52]
+@[61-70]
 
+---
+### Should we scope everything?
+![magic6](assets/scopeAll.jpg)
+
++++
+![scopeNo](http://i0.kym-cdn.com/photos/images/original/000/213/008/angry-no-l.png&size=auto 70%)
 ## Inversion of control
 
 - Code Presenting |
