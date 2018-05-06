@@ -59,6 +59,9 @@
 @[16-24]
 @[34-37]
 ---
+## Nested Scopes
+![magic4](http://i0.kym-cdn.com/photos/images/facebook/000/531/557/a88.jpg)
+
 ## Inversion of control
 
 - Code Presenting |
