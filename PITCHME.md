@@ -104,7 +104,14 @@
 ---
 ## Statics for the rescue
 
-![magic7](https://imgflip.com/i/29rpa2)
+![magic7](https://i.imgflip.com/29rpa2.jpg)
+
++++?code=sample/java/StaticComponent.java&lang=java&title=Static provides
+@[1-9]
+@[11-17]
+@[19-24]
+@[26-31]
+@[33-42]
 
 ## Inversion of control
 
