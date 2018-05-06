@@ -46,6 +46,14 @@
 ## Scoped provides
 ![magic3](/assets/scopes.jpg)
 
++++?code=sample/java/ScopedComponent.java&lang=java&title=Generated Injector 
+@[1-4]
+@[15-19]
+@[23-24]
+@[34-38]
+@[45-48]
+@[50-55]
+
 ---
 ## Inversion of control
 
