@@ -19,7 +19,6 @@ public class AppModule {
     }
 }
 
-
 public final class DaggerAppComponent implements AppComponent {
   private Provider<String> provideHelloProvider;
 
