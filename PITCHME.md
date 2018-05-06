@@ -93,6 +93,19 @@
 
 +++
 ![scopeNo](https://ic.pics.livejournal.com/deathnoteuser07/61110878/23829/23829_900.png)
+
++++?code=sample/java/ReusableComponent.java&lang=java&title=Reusability
+@[16-26]
+@[38-42]
+@[88-98]
+@[45-54]
+@[102-111]
+
+---
+## Statics for the rescue
+
+![magic7](https://imgflip.com/i/29rpa2)
+
 ## Inversion of control
 
 - Code Presenting |
