@@ -17,13 +17,13 @@
 ## Look deeper
 ![magic2](https://o.aolcdn.com/images/dims?thumbnail=640%2C480&quality=80&image_uri=https%3A%2F%2Fs.aolcdn.com%2Fhss%2Fstorage%2Fadam%2F78a605cfc9682db8038816df349dd9e3%2Fgandalf+lotr+macbook+apple.jpg&client=cbc79c14efcebee57402&signature=a9cba48bbfc7a8c7cc7176923a06d0482cd8bd91)
 
-+++?code=sample/java/HelloGeneratedFactory.java&lang=java&title=Look inside 
++++?code=sample/java/HelloGeneratedFactory.java&lang=java&title=Provider factory
 @[24-26]
 @[28-36]
 @[2-6]
 @[8-12]
 
-+++?code=sample/java/HelloGeneratedComponent.java&lang=java&title=Look inside 
++++?code=sample/java/HelloGeneratedComponent.java&lang=java&title=Generated Component
 @[28-31]
 @[48-51]
 @[33-38]
@@ -31,10 +31,13 @@
 @[17-26]
 
 
-+++?code=sample/java/HelloGeneratedInjector.java&lang=java&title=Look inside 
++++?code=sample/java/HelloGeneratedInjector.java&lang=java&title=Generated Injector 
 @[4-10]
 @[12-19]
 
++++
+![structure1](/assets/01HelloStructure.png)
+![structure2](/assets/01HelloDaggerGeneratedStructure.png)
 ---
 
 ## Inversion of control
