@@ -54,6 +54,9 @@
 @[44-50]
 @[52-57]
 
++++
+![diagram1](assets/singleScopeDiagram.png)
+
 +++?code=sample/java/ScopedDoubleCheck.java&lang=java&title=Double check provider
 @[8-14]
 @[16-24]
@@ -61,6 +64,9 @@
 ---
 ## Nested Scopes
 ![magic4](assets/matrioshki.jpg)
+
++++
+![diagram2](assets/activityComponents.png)
 
 +++?code=sample/java/NestedScopesComponents.java&lang=java&title=Nested components
 @[1-5]
@@ -73,6 +79,9 @@
 @[152-160]
 @[163-170]
 @[172-178]
+
++++
+![diagram2](assets/sessionComponents.png)
 
 ---
 ## Subcomponents
