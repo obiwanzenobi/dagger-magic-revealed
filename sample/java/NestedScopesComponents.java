@@ -119,11 +119,13 @@ public class App extends Application {
     }
 
     public static SessionComponent sessionComponent(Context context) {
-        return ((App) context.getApplicationContext()).sessionComponent();
+        return ((App) context.getApplicationContext())
+            .sessionComponent();
     }
 
     public static SessionComponent startNewSession(Context context) {
-        ((App) context.getApplicationContext()).sessionComponent = DaggerSessionComponent.builder()
+        ((App) context.getApplicationContext()).sessionComponent 
+            = DaggerSessionComponent.builder()
             .appComponent(appComponent(context))
             .build();
         return sessionComponent(context);
