@@ -1,7 +1,7 @@
 # Dagger
 
 ### Android dependency injection under the hood
-### Magic Revealed
+### Part 1: Magic Revealed
 ---
 ## Dagger
 - DI framework |
