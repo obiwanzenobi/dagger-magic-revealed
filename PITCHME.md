@@ -10,7 +10,7 @@
 @[1-14](Basic module with unscoped provider.)
 @[16-20](Component with just a single inject.)
 @[22-34](Application with component initialization)
-@[45-58](Activity inject.)
+@[45-56](Activity inject.)
 
 ---
 
