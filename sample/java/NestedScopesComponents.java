@@ -83,6 +83,103 @@ public interface ActivityComponent {
     void inject(SessionEndActivity activity);
 }
 
+@Module
+public class ActivityModule {
+
+    private String activityName;
+
+    public ActivityModule(String activityName) {
+        this.activityName = activityName;
+    }
+
+    @Provides
+    @PerActivity
+    SessionDisplayModel provideSessionDisplayModel(String appName, Integer sessionNumber) {
+        return new SessionDisplayModel(appName + " " + activityName + sessionNumber);
+    }
+}
+
+public class App extends Application {
+
+    private AppComponent appComponent;
+    private SessionComponent sessionComponent;
+
+    @Override
+    public void onCreate() {
+        super.onCreate();
+
+        appComponent = DaggerAppComponent
+            .builder()
+            .appModule(new AppModule(this))
+            .build();
+    }
+
+    public static AppComponent appComponent(Context context) {
+        return ((App) context.getApplicationContext()).appComponent();
+    }
+
+    public static SessionComponent sessionComponent(Context context) {
+        return ((App) context.getApplicationContext()).sessionComponent();
+    }
+
+    public static SessionComponent startNewSession(Context context) {
+        ((App) context.getApplicationContext()).sessionComponent = DaggerSessionComponent.builder()
+            .appComponent(appComponent(context))
+            .build();
+        return sessionComponent(context);
+    }
+
+    private AppComponent appComponent() {
+        return appComponent;
+    }
+
+    private SessionComponent sessionComponent() {
+        return sessionComponent;
+    }
+}
+
+
+public class SessionActivity extends AppCompatActivity {
+
+    @Inject
+    SessionDisplayModel sessionDisplayModel;
+
+    @Override
+    protected void onCreate(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_label);
+
+        DaggerActivityComponent.builder()
+            .sessionComponent(App.startNewSession(this))
+            .activityModule(new ActivityModule(this.getClass().getName()))
+            .build()
+            .inject(this);
+
+       //..
+    }
+}
+
+public class SessionEndActivity extends AppCompatActivity {
+
+    @Inject
+    SessionDisplayModel sessionDisplayModel;
+
+    @Override
+    protected void onCreate(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_label);
+
+        DaggerActivityComponent.builder()
+            .sessionComponent(App.sessionComponent(this))
+            .activityModule(new ActivityModule(this.getClass().getName()))
+            .build()
+            .inject(this);
+
+        TextView label = findViewById(R.id.label);
+        label.setText(sessionDisplayModel.getSessionName());
+    }
+}
+
 public final class DaggerActivityComponent implements ActivityComponent {
   private lightmobile_dagger_injection_SessionComponent_originalString originalStringProvider;
 
